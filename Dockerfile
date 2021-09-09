@@ -58,8 +58,7 @@ RUN apt-get -qqy update \
     && apt -qqy install npm \
     && apt -qqy install neofetch \
     && apt -qqy install hollywood \
-    && apt -qqy update \
-    && apt -qqy upgrade \
+    && sudo su
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
@@ -72,8 +71,8 @@ RUN apt-get -qqy update \
 #============================
 FROM ubuntu-utilities as ubuntu-ui
 
-ENV SCREEN_WIDTH=1280 \
-    SCREEN_HEIGHT=720 \
+ENV SCREEN_WIDTH=1920 \
+    SCREEN_HEIGHT=1080 \
     SCREEN_DEPTH=24 \
     SCREEN_DPI=96 \
     DISPLAY=:99 \
