@@ -1,4 +1,4 @@
-FROM ubuntu:20.04 as ubuntu-base
+FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive \
     DEBCONF_NONINTERACTIVE_SEEN=true
