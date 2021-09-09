@@ -52,12 +52,14 @@ RUN apt-get -qqy update \
     && apt install unzip \
     && apt -qqy install nano \
     && apt -qqy install neovim \
-    && apt -qqy install openjdk-11-jdk\
+    && apt -qqy install openjdk-11-jdk \
     && apt -qqy install python3 \
     && apt -qqy install python3-pip \
     && apt -qqy install npm \
     && apt -qqy install neofetch \
     && apt -qqy install hollywood \
+    && apt -qqy update \
+    && apt -qqy upgrade \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
