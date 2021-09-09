@@ -53,7 +53,6 @@ RUN apt-get -qqy update \
     && apt -qqy install python3 \
     && apt -qqy install python3-pip \
     && apt -qqy install npm \
-    && apt -qqy install bashtop \
     && apt -qqy install neofetch \
     && apt -qqy install hollywood \
     && apt-get autoclean \
