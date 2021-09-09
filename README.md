@@ -6,7 +6,7 @@ A VPS inside heroku
 
 - vps ( no root rightnow, will try to add soon )
 - gui access 
-- preinstalled python3, pip3, node.js, java16, neofetch, etc... ( want to install something ? just for this repo and edit the `Dockerfile`
+- preinstalled python3, pip3, node.js, java, vim, nano, neofetch, etc... ( want to install something ? just for this repo and edit the `Dockerfile`
 
 ## 💁‍♀️ How to use
 
