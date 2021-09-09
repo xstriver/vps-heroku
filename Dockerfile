@@ -58,7 +58,7 @@ RUN apt-get -qqy update \
     && apt -qqy install npm \
     && apt -qqy install neofetch \
     && apt -qqy install hollywood \
-    && sudo su
+    && sudo su \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
