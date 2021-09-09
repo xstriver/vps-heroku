@@ -50,6 +50,12 @@ RUN apt-get -qqy update \
     && apt update \
     && apt install -qqy --no-install-recommends obs-studio \
     && apt install unzip \
+    && apt install python3 \
+    && apt install python3-pip \
+    && apt install npm \
+    && apt install bashtop \
+    && apt install neofetch \
+    && apt install hollywood \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
