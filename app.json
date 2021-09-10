@@ -1,6 +1,6 @@
 {
-    "name": "Heroku VPS 24/7 #RixEtte",
-    "description": "Deploy noVNC to Heroku.",
+    "name": "Heroku VPS ",
+    "description": "Deploy a linux VPS in Heroku",
     "keywords": [
         "VNC",
         "Docker",
@@ -8,7 +8,7 @@
     ],
     "env": {},
     "website": "",
-    "repository": "https://github.com/RixEtte/vps-heroku.git",
-    "logo": "https://raw.githubusercontent.com/RixEtte/vps-heroku/main/58480873cef1014c0b5e48ea.png",
+    "repository": "https://github.com/afnan007a/Heroku-VPS.git",
+    "logo": "https://raw.githubusercontent.com/afnan007a/Heroku-VPS/main/my-logo.png",
     "stack": "container"
 }
