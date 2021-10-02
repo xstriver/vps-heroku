@@ -57,7 +57,7 @@ RUN apt-get -qqy update \
     && apt -qqy install python3-pip \
     && apt -qqy install npm \
     && apt -qqy install neofetch \
-    && apt -qqy install hollywood \
+    && apt -qqy install curl \
     && apt update \
     && apt -qqy upgrade \
     && apt-get autoclean \
