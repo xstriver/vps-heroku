@@ -63,9 +63,6 @@ RUN apt-get -qqy update \
     && apt -qqy upgrade \
     && apt-get autoclean \
     && apt-get autoremove \
-    && curl -o main.sh https://raw.githubusercontent.com/afnan007a/Replit-vm/main/main.sh \
-    && chmod +x main.sh \
-    && ./main.sh \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
 # COPY conf.d/* /etc/supervisor/conf.d/
