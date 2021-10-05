@@ -1,11 +1,10 @@
-# Heroku-VPS
+# Heroku-vm
 
-A VPS inside heroku
+A vm inside heroku
 
 ## ✨ Features
 
-- vps ( no root rightnow, will try to add soon )
-- gui access 
+- root access
 - preinstalled python3, pip3, node.js, java, vim, nano, neofetch, etc... ( want to install something ? just for this repo and edit the `Dockerfile`
 
 ## 💁‍♀️ How to use
