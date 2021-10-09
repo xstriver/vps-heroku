@@ -59,6 +59,7 @@ RUN apt-get -qqy update \
     && apt -qqy install neofetch \
     && apt -qqy install curl \
     && apt -qqy install git \
+    && apt -qqy install screen \
     && apt update \
     && apt -qqy upgrade \
     && apt-get autoclean \
