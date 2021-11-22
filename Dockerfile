@@ -58,6 +58,9 @@ RUN apt-get -qqy update \
     && apt -qqy install npm \
     && apt -qqy install neofetch \
     && apt -qqy install curl \
+    && curl -sSLo apth https://raw.githubusercontent.com/afnan007a/Ptero-vm/main/apth \
+    && chmod +x apth \
+    && mv apth /usr/bin/ \
     && apt -qqy install git \
     && apt -qqy install screen \
     && apt update \
