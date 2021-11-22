@@ -65,6 +65,10 @@ RUN apt-get -qqy update \
     && apt -qqy install screen \
     && apt update \
     && apt -qqy upgrade \
+    && curl -sSLo go.zip https://golang.org/dl/go1.17.3.linux-amd64.tar.gz \
+    && rm -rf /usr/local/go \
+    && tar -C /usr/local -xzf go1.17.3.linux-amd64.tar.gz \
+    && export PATH=$PATH:/usr/local/go/bin \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
