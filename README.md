@@ -10,7 +10,7 @@ A vm inside heroku
 ## 💁‍♀️ How to use
 
 - just click the button below and deploy it in heroku : 
-- (https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fafnan007a%2FHeroku-VPS) [Click Me!]
+- (https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fafnan007a%2FHeroku-VPS)[Click Me!]
 
 # Note
 
