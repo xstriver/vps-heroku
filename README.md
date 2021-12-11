@@ -1,5 +1,19 @@
-# vps-heroku
-so this is another file for heroku vps and its kinda same as pervious one
+# Heroku-vm
 
-here is the link to make ur vps
-https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2FRixEtte%2Fvps-heroku
+A vm inside heroku
+
+## ✨ Features
+
+- root access
+- preinstalled python3, pip3, node.js, java, vim, nano, neofetch, etc... ( want to install something ? just for this repo and edit the `Dockerfile`
+
+## 💁‍♀️ How to use
+
+- just click the button below and deploy it in heroku : 
+- [`Click Me!`](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fafnan007a%2FHeroku-VPS)
+
+# Note
+
+- special thanks to RixEtte for making this script, i just modified it and added some stuff and removed some junks to make it kewl xD!
+- use this on your own risk because its against heroku tos ( if im correct because i dont really know lol )
+

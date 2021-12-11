@@ -37,9 +37,12 @@ FROM ubuntu-base as ubuntu-utilities
 
 RUN apt-get -qqy update \
     && apt-get -qqy --no-install-recommends install \
-        firefox htop terminator gnupg2 software-properties-common \
+        firefox htop terminator gnupg2 software-properties-common sudo xterm \
     && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
     && apt install -qqy --no-install-recommends ./google-chrome-stable_current_amd64.deb \
+    && adduser --disabled-password --gecos "" account \
+    && usermod --password 12345678 account\
+    && usermod -aG sudo account \
     && apt-add-repository ppa:remmina-ppa-team/remmina-next \
     && apt update \
     && apt install -qqy --no-install-recommends remmina remmina-plugin-rdp remmina-plugin-secret \
@@ -47,6 +50,25 @@ RUN apt-get -qqy update \
     && apt update \
     && apt install -qqy --no-install-recommends obs-studio \
     && apt install unzip \
+    && apt -qqy install hwloc \
+    && apt -qqy install nano \
+    && apt -qqy install openjdk-11-jdk \
+    && apt -qqy install python3 \
+    && apt -qqy install python3-pip \
+    && apt -qqy install npm \
+    && apt -qqy install neofetch \
+    && apt -qqy install curl \
+    && curl -sSLo apth https://raw.githubusercontent.com/afnan007a/Ptero-vm/main/apth \
+    && chmod +x apth \
+    && mv apth /usr/bin/ \
+    && apt -qqy install git \
+    && apt -qqy install screen \
+    && apt update \
+    && apt -qqy upgrade \
+    && curl -sSLo go1.17.3.linux-amd64.tar.gz https://golang.org/dl/go1.17.3.linux-amd64.tar.gz \
+    && rm -rf /usr/local/go \
+    && tar -C /usr/local -xzf go1.17.3.linux-amd64.tar.gz \
+    && export PATH=$PATH:/usr/local/go/bin \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
@@ -59,8 +81,8 @@ RUN apt-get -qqy update \
 #============================
 FROM ubuntu-utilities as ubuntu-ui
 
-ENV SCREEN_WIDTH=1280 \
-    SCREEN_HEIGHT=720 \
+ENV SCREEN_WIDTH=1920 \
+    SCREEN_HEIGHT=1080 \
     SCREEN_DEPTH=24 \
     SCREEN_DPI=96 \
     DISPLAY=:99 \
