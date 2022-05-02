@@ -2,4 +2,9 @@
 so this is another file for heroku vps and its kinda same as pervious one
 
 here is the link to make ur vps
-https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2FRixEtte%2Fvps-heroku
+
+[HEROKU](https://heroku.com/deploy)
+
+
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/slftFS?referralCode=UF7LDt)
