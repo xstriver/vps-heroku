@@ -40,6 +40,8 @@ RUN apt-get -qqy update \
         firefox htop terminator gnupg2 software-properties-common \
     && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
     && apt install -qqy --no-install-recommends ./google-chrome-stable_current_amd64.deb \
+    && wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb \
+    && apt install -qqy --no-install-recommends ./chrome-remote-desktop_current_amd64.deb \
     && apt-add-repository ppa:remmina-ppa-team/remmina-next \
     && apt update \
     && apt install -qqy --no-install-recommends remmina remmina-plugin-rdp remmina-plugin-secret \
