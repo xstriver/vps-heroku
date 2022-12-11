@@ -10,6 +10,7 @@ RUN apt-get -qqy update \
         xvfb x11vnc novnc websockify \
     && apt-get autoclean \
     && apt-get autoremove \
+    && apt-get upgrade
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
 RUN cp /usr/share/novnc/vnc.html /usr/share/novnc/index.html
